@@ -26,6 +26,10 @@ function App() {
         <button onClick={clear}>0</button>
         <button onClick={increment}>+</button>
       </div>
+
+      <p>
+        The current count is: {count}
+      </p>
     </div>
   );
 }
