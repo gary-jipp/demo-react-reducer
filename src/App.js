@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <h2>
-        Counters (payload)
+        Counter (payload)
       </h2>
 
       <Counter count={count} dispatch={dispatch} />
