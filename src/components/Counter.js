@@ -4,10 +4,10 @@ const Counter = function(props) {
   const CLEAR = "CLEAR";
 
   const increment = function() {
-    props.dispatch({ type: INCREMENT, value: 2 });
+    props.dispatch({ type: INCREMENT, value: 1 });
   };
   const decrement = function() {
-    props.dispatch({ type: DECREMENT, value: 4 });
+    props.dispatch({ type: DECREMENT, value: 1 });
   };
   const clear = function() {
     props.dispatch({ type: CLEAR });
