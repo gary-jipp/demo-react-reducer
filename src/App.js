@@ -1,34 +1,18 @@
-import { useReducer } from "react";
+import { useState } from "react";
 import 'App.css';
-
-const INCREMENT = "INCREMENT";
-const DECREMENT = "DECREMENT";
-const CLEAR = "CLEAR";
-
-const countReducer = (state, action) => {
-  switch (action) {
-    case INCREMENT:
-      return state + 1;
-    case DECREMENT:
-      return state - 1;
-    case CLEAR:
-      return 0;
-    default:
-      return state;
-  }
-};
+import Counter from "components/Counter";
 
 function App() {
-  const [count, dispatch] = useReducer(countReducer, 0);
+  const [count, setCount] = useState(0);
 
   const increment = function() {
-    dispatch(INCREMENT);
+    setCount(count + 1);
   };
   const decrement = function() {
-    dispatch(DECREMENT);
+    setCount(count - 1);
   };
   const clear = function() {
-    dispatch(CLEAR);
+    setCount(0);
   };
 
   return (
@@ -37,12 +21,12 @@ function App() {
         Counters!
       </h1>
 
-      <div class="counter">
-        <span>{count}</span>
-        <button onClick={decrement}>-</button>
-        <button onClick={clear}>0</button>
-        <button onClick={increment}>+</button>
-      </div>
+      <Counter
+        count={count}
+        increment={increment}
+        decrement={decrement}
+        clear={clear} />
+
     </div>
   );
 }
