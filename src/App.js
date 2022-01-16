@@ -27,7 +27,13 @@ function App() {
       <h1>
         Counters!
       </h1>
+
       <Counter count={count} dispatch={dispatch} />
+
+      <p>
+        The current count is: {count}
+      </p>
+
     </div>
   );
 }
