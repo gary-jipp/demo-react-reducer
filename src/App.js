@@ -8,10 +8,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1>
-        Counters!
-      </h1>
+      <h2>
+        Counter (helper)
+      </h2>
+
       <Counter count={count} dispatch={dispatch} />
+     
+      <p>
+        The current count is: {count}
+      </p>
     </div>
   );
 }
