@@ -16,9 +16,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>
-        Counters!
-      </h1>
+      <h2>
+        Counter
+      </h2>
 
       <div class="counter">
         <span>{count}</span>
