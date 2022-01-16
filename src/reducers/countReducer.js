@@ -3,11 +3,11 @@ const countReducer = (state, action) => {
   const DECREMENT = "DECREMENT";
   const CLEAR = "CLEAR";
 
-  switch (action) {
+  switch (action.type) {
     case INCREMENT:
-      return state + 1;
+      return state + action.value;
     case DECREMENT:
-      return state - 1;
+      return state - action.value;
     case CLEAR:
       return 0;
     default:
