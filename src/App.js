@@ -17,9 +17,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>
-        Counters!
-      </h1>
+      <h2>
+        Counter (component)
+      </h2>
 
       <Counter
         count={count}

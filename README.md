@@ -1,1 +1,1 @@
-# Minimal React App v5
+# Counter Component with useState
