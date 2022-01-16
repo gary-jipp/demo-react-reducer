@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import Counter from "components/Counter";
 import 'App.css';
 
 const INCREMENT = "INCREMENT";
@@ -21,28 +22,12 @@ const countReducer = (state, action) => {
 function App() {
   const [count, dispatch] = useReducer(countReducer, 0);
 
-  const increment = function() {
-    dispatch(INCREMENT);
-  };
-  const decrement = function() {
-    dispatch(DECREMENT);
-  };
-  const clear = function() {
-    dispatch(CLEAR);
-  };
-
   return (
     <div className="App">
       <h1>
         Counters!
       </h1>
-
-      <div class="counter">
-        <span>{count}</span>
-        <button onClick={decrement}>-</button>
-        <button onClick={clear}>0</button>
-        <button onClick={increment}>+</button>
-      </div>
+      <Counter count={count} dispatch={dispatch} />
     </div>
   );
 }
