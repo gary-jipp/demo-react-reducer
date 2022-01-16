@@ -24,9 +24,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>
+      <h2>
         Counter (reducer)
-      </h1>
+      </h2>
 
       <Counter count={count} dispatch={dispatch} />
 
