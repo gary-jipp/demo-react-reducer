@@ -26,6 +26,7 @@ function App() {
         increment={increment}
         decrement={decrement}
         clear={clear} />
+        
       <p>
         The current count is: {count}
       </p>
