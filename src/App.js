@@ -1,17 +1,34 @@
-import { useState } from "react";
+import { useReducer } from "react";
 import 'App.css';
 
+const INCREMENT = "INCREMENT";
+const DECREMENT = "DECREMENT";
+const CLEAR = "CLEAR";
+
+const countReducer = (state, action) => {
+  switch (action) {
+    case INCREMENT:
+      return state + 1;
+    case DECREMENT:
+      return state - 1;
+    case CLEAR:
+      return 0;
+    default:
+      return state;
+  }
+};
+
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, dispatch] = useReducer(countReducer, 0);
 
   const increment = function() {
-    setCount(count + 1);
+    dispatch(INCREMENT);
   };
   const decrement = function() {
-    setCount(count - 1);
+    dispatch(DECREMENT);
   };
   const clear = function() {
-    setCount(0);
+    dispatch(CLEAR);
   };
 
   return (
