@@ -1,6 +1,6 @@
 # React useReducer
 
-- [ ] useReducer() lets you separate state management logic from the rendering logic of the component.
+- [ ] What problem are we trying to solve with `useReducer`?
 - [ ] Useful with complex states with many update operations
 - [ ] Also when you want to use the previous state
 - [ ] Less useful for simple state
