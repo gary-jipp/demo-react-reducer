@@ -1,5 +1,7 @@
 # React useReducer
 
+Navigate to the branches in this project to watch the evolution of the Counter App from a new react app to the completed code.
+
 - [ ] What problem are we trying to solve with `useReducer`?
 - [ ] Useful with complex states with many update operations
 - [ ] Also when you want to use the previous state
@@ -7,3 +9,4 @@
 - [ ] Component no longer needs to deal with "how" state is updated, only request that it be done
 - [ ] Allows fewer state update fuctions props to be used with components
 - [ ] "reduces" all the state management down to a single function `dispatch`
+
